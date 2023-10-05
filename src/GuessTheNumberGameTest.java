@@ -37,7 +37,6 @@ public class GuessTheNumberGameTest {
         assertTrue(guess >= 1 && guess <= 100);
     }
     //mockeo
-
    
 @Test
     public void testPlayerGuessesAfterWinning() {

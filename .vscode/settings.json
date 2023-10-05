@@ -1,0 +1,13 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\luis\\Desktop\\mockito-core-5.5.0.jar"
+    ],
+
+
+    "java.classPath": [
+        "lib/junit-4.13.2.jar", 
+        "src/GuessTheNumberGame.java"              
+    ],
+    
+}

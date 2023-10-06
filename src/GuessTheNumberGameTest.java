@@ -1,13 +1,13 @@
-import org.junit.Before;
-import org.junit.Test;
-import static org.junit.Assert.*;
-
-import org.mockito.Mockito;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.when;
+
 import java.util.ArrayList;
 import java.util.List;
 
-//import static org.mockito.Mockito.when;
+import org.junit.Before;
+import org.junit.Test;
+import org.mockito.Mockito;
 
 public class GuessTheNumberGameTest {
     private HumanPlayer humanPlayer;
@@ -36,12 +36,11 @@ public class GuessTheNumberGameTest {
         int guess = computerPlayer.makeGuess();
         assertTrue(guess >= 1 && guess <= 100);
     }
-    //mockeo
-   
-@Test
+    
+    @Test
     public void testPlayerGuessesAfterWinning() {
         // Crear un objeto mock de la clase Player
-        Player player = Mockito.mock(Player.class);
+        final Player player = Mockito.mock(Player.class);
 
         // Crear una lista de suposiciones simuladas
         List<Integer> simulatedGuesses = new ArrayList<>();
@@ -56,7 +55,6 @@ public class GuessTheNumberGameTest {
         assertEquals(simulatedGuesses, player.getGuesses());
     }
 }
-
 
 /* 
     @Test
